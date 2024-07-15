@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  countriesapi:
+    image: ${DOCKER_REGISTRY-}countriesapi
+    build:
+      context: api
+      dockerfile: Dockerfile
